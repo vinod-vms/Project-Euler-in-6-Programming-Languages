@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class Multiples_of_3_and_5
 {
@@ -6,9 +7,7 @@ public class Multiples_of_3_and_5
      */
     public int sum;
     public int number;
-    /*
-    * @author: Vinod Mathew Sebastian
-    */
+    
     public Multiples_of_3_and_5(int number)
     {
       sum = 0;  
@@ -35,6 +34,11 @@ public class Multiples_of_3_and_5
     return sum; 
 }
 
-
+public static void main(String [] args){
+    Scanner input = new Scanner(System.in);
+    int num = input.nextInt();
+    Multiples_of_3_and_5 an_object = new Multiples_of_3_and_5(num);
+    System.out.println("The result is: " + an_object.result());
+}
 
 }
